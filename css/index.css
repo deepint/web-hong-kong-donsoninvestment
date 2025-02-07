@@ -1,0 +1,193 @@
+/* Global Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  position: relative;
+  background: url('http://www.homerobot.life/homerobot.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay */
+}
+
+header h1 {
+  font-size: 4rem;
+  /* Increase font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+  margin: 0;
+  /* Remove any default margin */
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  z-index: 1;
+  margin: 0;
+  /* Remove any default margin */
+}
+
+/* Image Section (Below Header) */
+.image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Problem Statement Section */
+.problem {
+  background-color: #e0f7fa;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Solution Section */
+.solution {
+  background-color: #ffeb3b;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Product Overview Section */
+.product-overview {
+  background-color: #81c784;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vision and Future Plans Section */
+.vision {
+  background-color: #ff8a65;
+  text-align: center;
+  width: 100vw;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Feature List */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+  }
+}
