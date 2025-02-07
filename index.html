@@ -1,99 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hong Kong Donson Investment Limited</title>
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-  <script src="js/jquery.js"></script>
-  <script src="js/fullpage.js"></script>
-  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 第一部分 - 公司名称与介绍 */
+    .header {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* 第二部分 - 左右布局 */
+    .content {
+      display: flex;
+      padding: 20px 100px;
+      flex-wrap: wrap;
+    }
+
+    .content > div {
+      width: calc((100% - 160px) / 2);
+      padding: 20px;
+      box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+
+    .content > div > p{
+      color: #8c8c8c;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    /* 第三部分 - 版权 */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="fullpage">
-    <div class="section">
-      <header>
-        <h1>Welcome to HomeRobot</h1></br>
-        <p>Empowering Elderly Care, Home Security, and Companionship with Cutting-edge Robotics</p>
-      </header>
+
+  <!-- 第一部分 -->
+  <div class="header">
+    <h1>Hong Kong Donson Investment Limited</h1>
+    <p>Hong Kong Donson Investment Limited is a company registered in Hong Kong on December 5, 2023. Its primary business is investment, focusing on unregulated financial services and investment activities.</p>
+  </div>
+
+  <!-- 第二部分 -->
+  <div class="content">
+    <div>
+      <h2>Private Equity Investment (Unregulated Portion)</h2>
+      <p>Engaging in equity investments in unlisted companies, without involving public fundraising or securities trading.</p>
+      <p>Participating in projects through direct investments or establishing Limited Partnership (LP) funds.</p>
     </div>
-    <div class="section" style="background-color: black;">
-      <div class="image-container">
-        <img src="http://www.homerobot.life/homerobot.png" alt="HomeRobot">
-      </div>
+    <div>
+      <h2>Cross-border Investment and Asset Management</h2>
+      <p>Assisting clients with overseas asset allocation, such as investments in real estate, commodities, art, and other non-financial assets.</p>
     </div>
-    <div class="section fp-noscroll">
-      <div class="problem fp-noscroll">
-        <h2>Applicable Scenario</h2>
-        <p><strong>Elderly Care Needs:</strong> Increasing need for monitoring and companionship for elderly individuals
-          living alone.</p>
-        <p><strong>Home Security Challenges:</strong> Traditional systems often fail to deter criminals effectively.</p>
-        <p><strong>Home Surveillance Limitations:</strong> Existing solutions lack comprehensive coverage and raise privacy
-          concerns.</p>
-        <p><strong>Limitations of Current Security Systems:</strong> Stationary systems lack mobility and interactivity.</p>
-      </div>
+    <div>
+      <h2>Business Consulting and Strategic Planning</h2>
+      <p>Providing consulting services for market analysis, business model design, and strategic planning.</p>
+      <p>Assisting clients in expanding international markets or optimizing operational efficiency.</p>
     </div>
-    <div class="section fp-noscroll">
-      <div class="solution">
-        <h2>Our Solution</h2>
-        <div class="features">
-          <div class="feature-item">
-            <h3>Autonomous Mobility</h3>
-            <p>Comprehensive home surveillance through mobile patrolling.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Intelligent Sensing</h3>
-            <p>AI-driven vision, speech, and hearing capabilities for better understanding and interaction.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Human-like Companionship</h3>
-            <p>Engages with elderly individuals to reduce loneliness and provide emotional support.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Proactive Security</h3>
-            <p>Detects intruders, environmental hazards, and more to ensure a safe living environment.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    <div class="section fp-noscroll">
-      <div class="product-overview">
-        <h2>Product Overview</h2>
-        <p><strong>Design:</strong> Sleek and modern design fitting seamlessly into homes.</p>
-        <p><strong>Technology:</strong> AI, Machine Learning, and Advanced Sensors for intelligent sensing.</p>
-        <p><strong>Seamless Connectivity:</strong> Wi-Fi and 5G integration for real-time communication and control.</p>
+    <div>
+      <h2>Cross-border Investment Platform</h2>
+      <p>Leveraging Hong Kong's international status to establish a cross-border investment platform, helping mainland clients invest in overseas assets.</p>
     </div>
+    <div>
+      <h2>Corporate Incubation and Investment</h2>
+      <p>Investing in startups, providing funding and strategic support to help them grow and achieve an exit.</p>
     </div>
-    <div class="section fp-noscroll">
-      <div class="vision">
-        <h2>Vision and Future Plans</h2>
-        <p><strong>Protect. Care. Connect.</strong></p>
-        <p><strong>Long-Term Vision:</strong> Enhance lives with robotic solutions for safety, comfort, and companionship.</p>
-        <p><strong>Innovation Roadmap:</strong> Continuous AI development, smart home integration, and enhanced user experience to push the boundaries of robotics and home automation.</p>
+    <div>
+      <h2>Real Estate Investment and Management</h2>
+      <p>Engaging in real estate investments in Hong Kong and abroad, offering asset management and leasing services.</p>
     </div>
-    <footer>
-      <p>&copy; 2024 HomeRobot. All Rights Reserved.</p>
-    </footer>
+    <div>
+      <h2>Green Finance and Sustainable Development</h2>
+      <p>Participating in emerging fields such as green bonds, ESG (Environmental, Social, and Governance) investments, etc.</p>
+    </div>
+    <div>
+      <h2>Cultural and Technology Investment</h2>
+      <p>Investing in the cultural industry and technological innovation projects to promote the development of high-potential sectors.</p>
     </div>
   </div>
 
-  <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        //options here
-        autoScrolling: true,
-        navigation: true,
-        navigationPosition: 'right',
-        scrollHorizontally: true
-      });
+  <!-- 第三部分 -->
+  <div class="footer">
+    <p>&copy; 2025 Hong Kong Donson Investment Limited. All Rights Reserved.</p>
+  </div>
 
-      // Example of how to use fullpage.js methods
-      $.fn.fullpage.setAllowScrolling(true);
-    });
-  </script>
 </body>
 
 </html>
